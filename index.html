@@ -1,0 +1,46 @@
+<html lang="en">
+	<head>
+		<title>Webflow to Shopify</title>
+		<link href="styles.css" rel="stylesheet">
+    <script type="text/javascript" src="index.js"></script>
+	</head>
+
+  <body>
+    <div class="login-block">
+ 			<h1>Webflow to Shopify</h1>
+      <h4>Once you click the button, it will change the settings that fit to Shopify pages..</h4>
+      <h2>Before you start</h2>
+      <ul>
+        <li>Step 1: Upload your file to GoogleCloud</li>
+        <li>Step 2: Copy the url</li>
+        <li>Step 3: Paste the url on the 'Link from Google-Cloud'</li>
+      </ul>
+
+      <p class="title">Before Changed</p>
+
+      <input type="text" id="linkInput" class="input_text" placeholder="Link from Google-Cloud" required />
+      <div>
+        <p class="title">Store Selection</p>
+
+        <input type="checkbox" id="linkInput_store_eu" name="store" value="EU" onclick="checkOnlyOne(this)"/> EU
+
+        <input type="checkbox" id="linkInput_store_ca" name="store" value="CA" onclick="checkOnlyOne(this)"/>CA
+
+        <input type="checkbox" id="linkInput_store_global" name="store" value="GLOBAL" onclick="checkOnlyOne(this)"/> GLOBAL
+
+        <input type="checkbox" id="linkInput_store_uk" name="store" value="UK" onclick="checkOnlyOne(this)"/>UK
+
+        <input type="checkbox" id="linkInput_store_us" name="store" value="US" onclick="checkOnlyOne(this)"/>US
+
+        <input type="checkbox" id="linkInput_store_vn" name="store" value="VN" onclick="checkOnlyOne(this)"/>VN
+      </div>
+      <textarea id="htmlInput" placeholder="Paste webflow HTML..." required style="margin-top: 15px; width:100%; height: 500px; overflow: scroll;"></textarea>
+
+			<button onclick="submit()" id="submit-button">Change</button>
+      <div id="after-submit-buttons" class="hide">
+        <button onclick="copy()" id="copy-button" >Copy this code</button>
+        <button onclick="refresh()" id="refresh-button" >Refresh</button>
+      </div>
+		</div>
+	</body>
+</html>

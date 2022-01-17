@@ -1,0 +1,130 @@
+/* General element styles */
+
+h1{
+  color: #1D2936;
+  font-family: 'lato';
+  font-size: 224x;
+  font-weight: 800;
+  padding-bottom: 10px;
+  line-height: 0px;
+}
+
+h4{
+  color: #858892;
+  font-family: 'lato';
+  font-size: 16px;
+  font-weight: 400;
+  padding-bottom: 10px;
+  line-height: 25px;
+}
+
+body {
+  background-color: #F7F8F9;
+  display: flex;
+  justify-content: center;
+  padding: 1%;
+}
+
+/* Login section */
+
+.login-block{
+  background-color: white;
+  border: 1px solid #E2E2E2;
+  height: 100%;
+  padding: 50px;
+
+}
+
+button{
+  color: white;
+  font-family: 'lato';
+  font-size: 14px;
+  font-weight: 800;
+  background-color: #3B60E4;
+  border: none;
+  margin-top: 30px;
+  border-radius: 4px;
+  height: 50px;
+  width: 100%;
+  padding:0px;
+}
+
+button:hover, button:focus, button:active{
+  background-color: #2547BF;
+  cursor: pointer;
+  border: none;
+  box-shadow:none;
+  -webkit-transition: none;
+  -moz-transition: none;
+  -ms-transition: none;
+  -o-transition: none;
+  outline: none;
+}
+
+.disabled{
+  opacity: .2;
+  cursor: default!important;
+}
+
+.disabled:hover{
+  background-color: #3B60E4;
+}
+
+.input_text {
+  height: 40px;
+  width:100%;
+  font-size: 15px;
+  font-family: 'lato';
+  margin-bottom: 5px;
+  padding-left: 10px;
+  border: 1px solid #D7D8DB;
+  border-radius: 2px;
+}
+
+.store_selction {
+  margin-top: 25px;
+}
+
+input:focus{
+  border: 1px solid #3B60E4;
+  box-shadow:none;
+  -webkit-transition: none;
+  -moz-transition: none;
+  -ms-transition: none;
+  -o-transition: none;
+  outline: none;
+}
+
+::placeholder{
+  color: #D7D8DB;
+  font-weight: 400;
+}
+
+.title{
+  color: #858892;
+  opacity: .7;
+  font-family: 'lato';
+  font-size: 12px;
+  font-weight: 600;
+  padding-top: 5px;
+}
+
+.story{
+  font-family: 'lato';
+  line-height: 25px;
+  padding-top: 20px;
+  padding-bottom:0px;
+}
+
+.fail-message{
+  color: #cd1231;
+  font-family: 'lato';
+  font-size: 12px;
+  font-weight: 600;
+  padding-left: 27%;
+  padding-top:5px;
+}
+
+.hide {
+  display: none;
+}
